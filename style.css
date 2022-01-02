@@ -1,0 +1,101 @@
+body {
+    background-color: #F0F0E6;
+}
+
+a {
+    text-decoration: none;
+}
+
+input[type=radio] {
+    border: 0px;
+    width: 100%;
+    height: 2em;
+    box-shadow: none !important;
+}
+
+#header-field {
+    background-color: white;
+}
+
+#content-field {
+    border-radius: 20px;
+    background-color: white !important;
+}
+
+#question, #answer-field{
+    font-size: 17px;
+    line-height: 30px;
+}
+
+/* Cau hoi so ... */
+.question-btn {
+    border: none;
+    background-color: white;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 16px;
+}
+
+.question-btn:hover {
+    background-color: yellowgreen;
+}
+
+.answer-btn {
+    border: black;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    height: 50px;
+    background-color: #E2E5E7;
+}
+
+label {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.selected {
+    background-color: yellowgreen !important;
+}
+
+.btn-success {
+    width: 200px;
+    height: 50px;
+    border-radius: 30px;
+    background-color: #65B446;
+    font-size: 19px;
+    font: 700;
+    border: none;
+}
+
+#explain-field {
+    border-radius: 10px;
+    /* display: none; */
+}
+
+.explain-banner {
+    background-color: #FAB051;
+    color: white;
+    font-size: 15px;
+    height: 40px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.explain-content {
+    font-size: 16px;
+    line-height: 40px;
+}
+
+.answer-input {
+    width: 50px;
+    display: inline-block;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+.answer-input:focus {
+    width: 50px;
+    display: inline-block;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
