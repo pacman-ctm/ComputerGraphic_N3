@@ -91,6 +91,7 @@ label {
     display: inline-block;
     border-radius: 5px;
     border: 1px solid gray;
+    text-align: center;
 }
 
 .answer-input:focus {
@@ -98,4 +99,11 @@ label {
     display: inline-block;
     border-radius: 5px;
     border: 1px solid gray;
+    text-align: center;
+}
+
+#icon {
+    display: inline-block;
+    height: 90px;
+    width: 90px;
 }
