@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+}
+
+canvas {
+    z-index: 1000000;
+}
+
+div.container {
+    display: grid;
+    grid-template: auto / 15% auto;
+    height: 100%;
+    /* background-color: yellow; */
+}
+
+#menu {
+    /* background-color: green; */
+    /* opacity: 0; */
+}
+
+#all-candy {
+    /* background-color: pink; */
+    height: 20%;
+}
+
+#divide {
+    /* background-color: blue; */
+    height: 60%;
+}
