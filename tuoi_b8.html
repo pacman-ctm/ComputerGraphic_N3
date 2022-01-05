@@ -68,7 +68,7 @@
                         <div class="col-8">
                             Khi Teddy 5 tuổi thì tuổi của bố bạn ấy nhiều gấp 7 lần tuổi của bạn ấy. <br> Hỏi khi bố Teddy 40 tuổi thì bạn ấy bao nhiêu tuổi? <br>
                             <br> Trả lời:
-                            <input class="answer-input" type="text"> tuổi <br>
+                            <input class="answer-input" type="text" id="a1"> tuổi <br>
                         </div>
                         <div class="col-4">
                             <img src="https://c.neh.tw/thumb/f/720/30a52719baee4e869d2a.jpg" class="img-fluid rounded-3">
@@ -190,7 +190,16 @@
         </div>
 
     </div>
-
+    <script>
+        function MyFunction() {
+            var a1 = document.getElementById("a1").value;
+            if (a1 == 10) {
+                document.getElementById("tb").innerHTML = "Bạn đã trả lời đúng";
+            } else {
+                document.getElementById("tb").innerHTML = "Tiếc quá! Bạn trả lời chưa chính xác rồi";
+            }
+        }
+    </script>
 </body>
 
 </html>

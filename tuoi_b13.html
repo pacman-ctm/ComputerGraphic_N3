@@ -68,7 +68,7 @@
                     <div id="answer-field" class="row">
                         <div class="col-8">
                             Chú Gibson nhiều hơn cô Gibson 5 tuổi. <br> 5 năm nữa, tổng số tuổi của cô chú ấy sẽ là 95. <br> Hỏi năm nay mỗi người bao nhiêu tuổi? <br>
-                            <br> Trả lời: Năm nay, chú Gibson <input class="answer-input" type="text"> tuổi <br> Cô Gibson <input class="answer-input" type="text"> tuổi <br>
+                            <br> Trả lời: Năm nay, chú Gibson <input class="answer-input" type="text" id="a1"> tuổi <br> Cô Gibson <input class="answer-input" type="text" id="a2"> tuổi <br>
 
                         </div>
                         <div class="col-4">
@@ -191,6 +191,18 @@
         </div>
 
     </div>
+
+    <script>
+        function MyFunction() {
+            var a1 = document.getElementById("a1").value;
+            var a2 = document.getElementById("a2").value;
+            if (a1 == 45 && a2 == 40) {
+                document.getElementById("tb").innerHTML = "Bạn đã trả lời đúng";
+            } else {
+                document.getElementById("tb").innerHTML = "Tiếc quá! Bạn trả lời chưa chính xác rồi";
+            }
+        }
+    </script>
 
 </body>
 

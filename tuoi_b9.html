@@ -69,7 +69,7 @@
                             Mẹ của Julia 36 tuổi. <br> Bố của bạn ấy 42 tuổi. <br> Biết Julia năm nay 7 tuổi. Hỏi bao nhiêu năm nữa thì tổng số tuổi của cả ba người là 100.
                             <br>
                             <br> Trả lời:
-                            <input class="answer-input" type="text"> năm
+                            <input class="answer-input" type="text" id="a1"> năm
                             <br>
 
                         </div>
@@ -194,6 +194,16 @@
 
     </div>
 
+    <script>
+        function MyFunction() {
+            var a1 = document.getElementById("a1").value;
+            if (a1 == 5) {
+                document.getElementById("tb").innerHTML = "Bạn đã trả lời đúng";
+            } else {
+                document.getElementById("tb").innerHTML = "Tiếc quá! Bạn trả lời chưa chính xác rồi";
+            }
+        }
+    </script>
 </body>
 
 </html>

@@ -73,8 +73,8 @@
 
                     <div id="answer-field" class="row">
                         <div class="col-8">
-                            Bố của Shelia 35 tuổi. <br> Ông của bạn ấy 62 tuổi. <br> Vậy 12 năm nữa, bố của Shelia <input class="answer-input" type="text"> tuổi. <br> Ông của Shelia
-                            <input class="answer-input" type="text"> tuổi.
+                            Bố của Shelia 35 tuổi. <br> Ông của bạn ấy 62 tuổi. <br> Vậy 12 năm nữa, bố của Shelia <input class="answer-input" type="text" id="a1"> tuổi. <br> Ông của Shelia
+                            <input class="answer-input" type="text" id="a2"> tuổi.
                         </div>
                         <div class="col-4">
                             <img src="https://c.neh.tw/thumb/f/720/30a52719baee4e869d2a.jpg" class="img-fluid rounded-3">
@@ -196,6 +196,18 @@
         </div>
 
     </div>
+
+    <script>
+        function MyFunction() {
+            var a1 = document.getElementById("a1").value;
+            var a2 = document.getElementById("a2").value;
+            if (a1 == 47 && a2 == 74) {
+                document.getElementById("tb").innerHTML = "Bạn đã trả lời đúng";
+            } else {
+                document.getElementById("tb").innerHTML = "Tiếc quá! Bạn trả lời chưa chính xác rồi";
+            }
+        }
+    </script>
 
 </body>
 

@@ -69,8 +69,8 @@
                     <div id="answer-field" class="row">
                         <div class="col-8">
                             Tom 6 tuổi. <br> Anh trai của bạn ấy 11 tuổi. <br> Vậy anh trai của Tom hơn Tom
-                            <input class="answer-input" type="text"> tuổi <br> Và trong 10 năm nữa Tom sẽ ít hơn anh trai của mình
-                            <input class="answer-input" type="text"> tuổi
+                            <input class="answer-input" type="text" id="a1"> tuổi <br> Và trong 10 năm nữa Tom sẽ ít hơn anh trai của mình
+                            <input class="answer-input" type="text" id="a2"> tuổi
                         </div>
                         <div class="col-4">
                             <img src="https://c.neh.tw/thumb/f/720/30a52719baee4e869d2a.jpg" class="img-fluid rounded-3">
@@ -193,6 +193,18 @@
         </div>
 
     </div>
+
+    <script>
+        function MyFunction() {
+            var a1 = document.getElementById("a1").value;
+            var a2 = document.getElementById("a2").value;
+            if (a1 == 5 && a2 == 5) {
+                document.getElementById("tb").innerHTML = "Bạn đã trả lời đúng";
+            } else {
+                document.getElementById("tb").innerHTML = "Tiếc quá! Bạn trả lời chưa chính xác rồi";
+            }
+        }
+    </script>
 
 </body>
 

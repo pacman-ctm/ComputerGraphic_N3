@@ -68,7 +68,7 @@
                         <div class="col-8">
                             Anna 5 tuổi. <br> Mẹ của em ấy 33 tuổi. <br> Hỏi bao nhiêu năm nữa thì tuổi của mẹ Anna sẽ nhiều gấp 5 lần tuổi của em ấy? <br>
                             <br> Trả lời:
-                            <input class="answer-input" type="text"> năm
+                            <input class="answer-input" type="text" id="a1"> năm
 
                         </div>
                         <div class="col-4">
@@ -191,6 +191,17 @@
         </div>
 
     </div>
+
+    <script>
+        function MyFunction() {
+            var a1 = document.getElementById("a1").value;
+            if (a1 == 2) {
+                document.getElementById("tb").innerHTML = "Bạn đã trả lời đúng";
+            } else {
+                document.getElementById("tb").innerHTML = "Tiếc quá! Bạn trả lời chưa chính xác rồi";
+            }
+        }
+    </script>
 
 </body>
 

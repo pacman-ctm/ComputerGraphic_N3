@@ -226,6 +226,17 @@
 
     </div>
 
+    <script>
+        function MyFunction() {
+            var x = document.getElementById("option3").checked;
+            if (x == true) {
+                document.getElementById("tb").innerHTML = "Bạn đã trả lời đúng";
+            } else {
+                document.getElementById("tb").innerHTML = "Tiếc quá! Bạn trả lời chưa chính xác rồi";
+            }
+        }
+    </script>
+
 </body>
 
 </html>
