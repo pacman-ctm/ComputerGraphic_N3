@@ -107,3 +107,21 @@ label {
     height: 90px;
     width: 90px;
 }
+
+td {
+    text-align: center;
+}
+
+.title td, th {
+    padding: 0 10px;
+}
+
+.titleWide td, th {
+    padding: 0 20px;
+}
+.tableWithLine,
+.tableWithLine tr th,
+.tableWithLine tr td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
