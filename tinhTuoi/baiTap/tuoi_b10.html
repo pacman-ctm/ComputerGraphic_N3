@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../../style.css" />
     <title>Nhóm 3</title>
 </head>
 
@@ -18,7 +18,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col p-4 d-flex justify-content-center align-items-center">
-                        <img src="icon.png" id="icon"> Nhóm 3
+                        <img src="../../image/icon.png" id="icon"> Nhóm 3
                     </div>
                     <div class="col p-4 d-flex justify-content-center align-items-center">
                         Chương 5. Tuổi
@@ -57,8 +57,8 @@
                             </h2>
                             <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    Tuổi của chú Woody hiện tại: 38 + 4 = 42 tuổi <br> Tổng số tuổi của ba người hiện tại là: 38 + 42 + 8 = 88 tuổi <br> ⇒ Còn (100 - 88) ÷ 3 = 4 năm thì tổng số tuổi của ba người sẽ là 100 <br>
-                                    <a href="#"><button class="btn btn-info mt-3">Đã hiểu</button></a>
+                                    Bố của Phylis hơn Phylis 40 - 5 = 35 tuổi <br> Để tuổi bố gấp 6 lần tuổi con thì khoảng cách tuổi của bố và con sẽ ứng với 5 lần tuổi con <br> ⇒ Lúc đấy Phylis 35 ÷ 5 = 7 tuổi <br> ⇒ Còn 2 năm nữa <br>
+                                    <a href="tuoi_b11.html"><button class="btn btn-info mt-3">Đã hiểu</button></a>
                                 </div>
                             </div>
                         </div>
@@ -67,7 +67,7 @@
 
                     <div id="question" class="row">
                         <div class="col">
-                            Cô Woody năm nay 38 tuổi. <br> Cô ấy trẻ hơn chú Woody 4 tuổi. <br> Con trai út của cô chú là Jim năm nay 8 tuổi. <br> Hỏi bao nhiêu năm nữa tổng số tuổi của cả ba người sẽ là 100? <br>
+                            Phylis 5 tuổi. <br> Bố của em ấy 40 tuổi. <br> Hỏi bao nhiêu năm nữa thì tuổi của bố Phylis sẽ nhiều gấp 6 lần tuổi của em ấy? <br>
                         </div>
                     </div>
 
@@ -78,8 +78,8 @@
                                 <div class="answer-btn col-1 d-flex align-items-center justify-content-center">
                                     <input type="radio" name="answer" id="option1">
                                 </div>
-                                <label for="option1" class="form-check-label border col-10 d-flex align-items-center">
-                                    2 năm</label>
+                                <label for="option1" class="form-check-label border col-10 d-flex align-items-center"> 1
+                                    năm</label>
                             </div>
                             <br>
 
@@ -89,7 +89,7 @@
                                     <input type="radio" name="answer" id="option2">
                                 </div>
                                 <label for="option2" class="form-check-label border col-10 d-flex align-items-center">
-                                    4 năm</label>
+                                    2 năm</label>
                             </div>
                             <br>
 
@@ -99,7 +99,7 @@
                                     <input type="radio" name="answer" id="option3">
                                 </div>
                                 <label for="option3" class="form-check-label border col-10 d-flex align-items-center">
-                                    5 năm</label>
+                                    3 năm</label>
                             </div>
                             <br>
                         </div>
@@ -130,8 +130,8 @@
                                             ...
                                         </div>
                                         <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" onclick="location.href='tuoi_b14.html'">Làm lại</button>
-                                            <!-- <button type="button" class="btn btn-primary" onclick="location.href='#'">Làm câu tiếp theo</button> -->
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" onclick="location.href='tuoi_b10.html'">Làm lại</button>
+                                            <button type="button" class="btn btn-primary" onclick="location.href='tuoi_b11.html'">Làm câu tiếp theo</button>
                                         </div>
                                     </div>
                                 </div>
@@ -195,7 +195,7 @@
                         </a>
                         <a href="tuoi_b10.html">
                             <div class="row">
-                                <button class="question-btn">Câu hỏi số 10</button>
+                                <button class="question-btn selected">Câu hỏi số 10</button>
                             </div>
                         </a>
                         <a href="tuoi_b11.html">
@@ -215,7 +215,7 @@
                         </a>
                         <a href="tuoi_b14.html">
                             <div class="row">
-                                <button class="question-btn selected">Câu hỏi số 14</button>
+                                <button class="question-btn">Câu hỏi số 14</button>
                             </div>
                         </a>
                     </div>
@@ -224,7 +224,6 @@
         </div>
 
     </div>
-
     <script>
         function MyFunction() {
             var x = document.getElementById("option2").checked;
@@ -235,7 +234,6 @@
             }
         }
     </script>
-
 </body>
 
 </html>

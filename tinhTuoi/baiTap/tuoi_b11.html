@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../../style.css" />
     <title>Nhóm 3</title>
 </head>
 
@@ -18,7 +18,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col p-4 d-flex justify-content-center align-items-center">
-                        <img src="icon.png" id="icon"> Nhóm 3
+                        <img src="../../image/icon.png" id="icon"> Nhóm 3
                     </div>
                     <div class="col p-4 d-flex justify-content-center align-items-center">
                         Chương 5. Tuổi
@@ -57,8 +57,8 @@
                             </h2>
                             <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    Tổng số tuổi của ba người hiện tại là: 36 + 42 + 7 = 85 tuổi <br> Mỗi năm tổng số tuổi của ba người tăng lên 3 tuổi. <br> ⇒ Số năm để tổng số tuổi ba người là 100: (100 - 85) ÷ 3 = 5 năm <br>
-                                    <a href="tuoi_b10.html"><button class="btn btn-info mt-3">Đã hiểu</button></a>
+                                    Mẹ của Anna hơn Anna 33 - 5 = 28 tuổi <br> Để tuổi mẹ gấp 5 lần tuổi con thì khoảng cách tuổi của mẹ và con sẽ ứng với 4 lần tuổi con <br> ⇒ Lúc đấy tuổi của Anna là: 28 ÷ 4 = 7 <br> ⇒ Đáp án: 7 - 5 = 2 năm <br>
+                                    <a href="tuoi_b12.html"><button class="btn btn-info mt-3">Đã hiểu</button></a>
                                 </div>
                             </div>
                         </div>
@@ -66,11 +66,9 @@
 
                     <div id="answer-field" class="row">
                         <div class="col-8">
-                            Mẹ của Julia 36 tuổi. <br> Bố của bạn ấy 42 tuổi. <br> Biết Julia năm nay 7 tuổi. Hỏi bao nhiêu năm nữa thì tổng số tuổi của cả ba người là 100.
-                            <br>
+                            Anna 5 tuổi. <br> Mẹ của em ấy 33 tuổi. <br> Hỏi bao nhiêu năm nữa thì tuổi của mẹ Anna sẽ nhiều gấp 5 lần tuổi của em ấy? <br>
                             <br> Trả lời:
                             <input class="answer-input" type="text" id="a1"> năm
-                            <br>
 
                         </div>
                         <div class="col-4">
@@ -99,8 +97,8 @@
                                             ...
                                         </div>
                                         <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" onclick="location.href='tuoi_b9'">Làm lại</button>
-                                            <button type="button" class="btn btn-primary" onclick="location.href='tuoi_b10.html'">Làm câu tiếp theo</button>
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" onclick="location.href='tuoi_b11.html'">Làm lại</button>
+                                            <button type="button" class="btn btn-primary" onclick="location.href='tuoi_b12.html'">Làm câu tiếp theo</button>
                                         </div>
                                     </div>
                                 </div>
@@ -159,7 +157,7 @@
                         </a>
                         <a href="tuoi_b9.html">
                             <div class="row">
-                                <button class="question-btn selected">Câu hỏi số 9</button>
+                                <button class="question-btn">Câu hỏi số 9</button>
                             </div>
                         </a>
                         <a href="tuoi_b10.html">
@@ -169,7 +167,7 @@
                         </a>
                         <a href="tuoi_b11.html">
                             <div class="row">
-                                <button class="question-btn">Câu hỏi số 11</button>
+                                <button class="question-btn selected">Câu hỏi số 11</button>
                             </div>
                         </a>
                         <a href="tuoi_b12.html">
@@ -197,13 +195,14 @@
     <script>
         function MyFunction() {
             var a1 = document.getElementById("a1").value;
-            if (a1 == 5) {
+            if (a1 == 2) {
                 document.getElementById("tb").innerHTML = "Bạn đã trả lời đúng";
             } else {
                 document.getElementById("tb").innerHTML = "Tiếc quá! Bạn trả lời chưa chính xác rồi";
             }
         }
     </script>
+
 </body>
 
 </html>

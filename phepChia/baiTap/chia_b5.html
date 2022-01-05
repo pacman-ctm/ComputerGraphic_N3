@@ -7,8 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../../style.css" />
     <title>Nhóm 3</title>
 </head>
 
@@ -18,10 +19,10 @@
             <div class="container">
                 <div class="row">
                     <div class="col p-4 d-flex justify-content-center align-items-center">
-                        <img src="icon.png" id="icon"> Nhóm 3
+                        <img src="../../image/icon.png" id="icon"> Nhóm 3
                     </div>
                     <div class="col p-4 d-flex justify-content-center align-items-center">
-                        Chương 5. Tuổi
+                        Chương 6. Phép chia
                     </div>
                     <!-- <div class="col p-4 d-flex justify-content-center align-items-center"> -->
                     <div class="col p-4 text-center">
@@ -57,25 +58,70 @@
                             </h2>
                             <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    Anh trai của Tom hơn Tom 11 - 6 = 5 tuổi <br> Vì khoảng cách tuổi không thay đổi nên 10 năm nữa anh trai của Tom vẫn hơn Tom 5 tuổi <br>
-                                    <a href="tuoi_b4.html"><button class="btn btn-info mt-3">Đã hiểu</button></a>
+                                    Ta có: <b>Số chia nhỏ nhất</b> = <b>Số dư</b> + <b>1</b> <br>
+                                    <ol type="a">
+                                        <li> <b>29</b> : <b>5</b> = 5 dư 4 </li>
+                                        <li> <b>31</b> : <b>4</b> = 7 dư 3 </li>
+                                        <li> <b>41</b> : <b>6</b> = 6 dư 5 </li>
+                                        <li> <b>44</b> : <b>5</b> = 8 dư 4 </li>
+                                        <li> <b>39</b> : <b>4</b> = 9 dư 3 </li>
+                                        <li> <b>59</b> : <b>6</b> = 9 dư 5 </li>
+                                    </ol>
+                                    <a href="chia_b6.html"><button class="btn btn-info mt-3">Đã hiểu</button></a>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <br>
-
+                    </div><br>
+                    <!-- <div class="row mb-4 border" id="explain-field">
+                        <div class="col">
+                            <div class="row explain-banner">
+                                <div class="col d-flex align-items-center">
+                                    <i class="bi bi-lightbulb"></i> &nbsp; Giải thích
+                                </div>
+                            </div>
+                            <div class="row explain-content">
+                                <div class="col p-4">
+                                    Ta có: <b>Số chia nhỏ nhất</b> = <b>Số dư</b> + <b>1</b> <br>
+                                    <ol type="a">
+                                        <li> 29 : 5 = <b>5</b> dư <b>4</b> </li>
+                                        <li> 31 : 4 = <b>7</b> dư <b>3</b> </li>
+                                        <li> 41 : 6 = <b>6</b> dư <b>5</b> </li>
+                                        <li> 44 : 5 = <b>8</b> dư <b>4</b> </li>
+                                        <li> 39 : 4 = <b>9</b> dư <b>3</b> </li>
+                                        <li> 59 : 6 = <b>9</b> dư <b>5</b> </li>
+                                    </ol>
+                                    <a href="chia_b4.html"><button class="btn btn-info mt-3">Đã hiểu</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
 
                     <div id="answer-field" class="row">
-                        <div class="col-8">
-                            Tom 6 tuổi. <br> Anh trai của bạn ấy 11 tuổi. <br> Vậy anh trai của Tom hơn Tom
-                            <input class="answer-input" type="text" id="a1"> tuổi <br> Và trong 10 năm nữa Tom sẽ ít hơn anh trai của mình
-                            <input class="answer-input" type="text" id="a2"> tuổi
-                        </div>
-                        <div class="col-4">
-                            <img src="https://c.neh.tw/thumb/f/720/30a52719baee4e869d2a.jpg" class="img-fluid rounded-3">
-                        </div>
+                        <div class="col">
+                            Điền số thích hợp vào ô trống để có được số chia nhỏ nhất và số chia đó phải lớn hơn số dư:
+                            <ol type="a">
+                                <li>
+                                    <input class="answer-input" type="text" id="a1"> : <input class="answer-input" type="text" id="a2"> = 5 dư 4
+                                </li> <br>
+                                <li>
+                                    <input class="answer-input" type="text" id="b1"> : <input class="answer-input" type="text" id="b2"> = 7 dư 3
+                                </li> <br>
+                                <li>
+                                    <input class="answer-input" type="text" id="c1"> : <input class="answer-input" type="text" id="c2"> = 6 dư 5
+                                </li> <br>
+                                <li>
+                                    <input class="answer-input" type="text" id="d1"> : <input class="answer-input" type="text" id="d2"> = 8 dư 4
+                                </li> <br>
+                                <li>
+                                    <input class="answer-input" type="text" id="e1"> : <input class="answer-input" type="text" id="e2"> = 9 dư 3
+                                </li> <br>
+                                <li>
+                                    <input class="answer-input" type="text" id="f1"> : <input class="answer-input" type="text" id="f2"> = 9 dư 5
+                                </li> <br>
 
+                            </ol>
+
+                        </div>
                     </div>
 
                     <div class="row justify-content-center mt-5">
@@ -83,7 +129,7 @@
                             <!-- <input type="submit" class="btn btn-success" value="Trả lời"> -->
 
                             <!-- Button trigger modal -->
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="MyFunction()"> 
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="MyFunction()">
                                 Trả lời
                             </button>
 
@@ -99,8 +145,8 @@
                                             ...
                                         </div>
                                         <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" onclick="location.href='tuoi_b3.html'">Làm lại</button>
-                                            <button type="button" class="btn btn-primary" onclick="location.href='tuoi_b4.html'">Làm câu tiếp theo</button>
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" onclick="location.href='chia_b5.html'">Làm lại</button>
+                                            <button type="button" class="btn btn-primary" onclick="location.href='6.html'">Làm câu tiếp theo</button>
                                         </div>
                                     </div>
                                 </div>
@@ -117,74 +163,84 @@
                     </div>
 
                     <div class="row pb-3">
-                        <a href="tuoi_b1.html">
+                        <a href="chia_b1.html">
                             <div class="row">
                                 <button class="question-btn">Câu hỏi số 1</button>
                             </div>
                         </a>
-                        <a href="tuoi_b2.html">
+                        <a href="chia_b2.html">
                             <div class="row">
                                 <button class="question-btn">Câu hỏi số 2</button>
                             </div>
                         </a>
-                        <a href="tuoi_b3.html">
+                        <a href="chia_b3.html">
                             <div class="row">
-                                <button class="question-btn selected">Câu hỏi số 3</button>
+                                <button class="question-btn">Câu hỏi số 3</button>
                             </div>
                         </a>
-                        <a href="tuoi_b4.html">
+                        <a href="chia_b4.html">
                             <div class="row">
                                 <button class="question-btn">Câu hỏi số 4</button>
                             </div>
                         </a>
-                        <a href="tuoi_b5.html">
+                        <a href="chia_b5.html">
                             <div class="row">
-                                <button class="question-btn">Câu hỏi số 5</button>
+                                <button class="question-btn selected">Câu hỏi số 5</button>
                             </div>
                         </a>
-                        <a href="tuoi_b6.html">
+                        <a href="chia_b6.html">
                             <div class="row">
                                 <button class="question-btn">Câu hỏi số 6</button>
                             </div>
                         </a>
-                        <a href="tuoi_b7.html">
+                        <a href="chia_b7.html">
                             <div class="row">
                                 <button class="question-btn">Câu hỏi số 7</button>
                             </div>
                         </a>
-                        <a href="tuoi_b8.html">
+                        <a href="chia_b8.html">
                             <div class="row">
                                 <button class="question-btn">Câu hỏi số 8</button>
                             </div>
                         </a>
-                        <a href="tuoi_b9.html">
+                        <a href="chia_b9.html">
                             <div class="row">
                                 <button class="question-btn">Câu hỏi số 9</button>
                             </div>
                         </a>
-                        <a href="tuoi_b10.html">
+                        <a href="chia_b10.html">
                             <div class="row">
                                 <button class="question-btn">Câu hỏi số 10</button>
                             </div>
                         </a>
-                        <a href="tuoi_b11.html">
+                        <a href="chia_b11.html">
                             <div class="row">
                                 <button class="question-btn">Câu hỏi số 11</button>
                             </div>
                         </a>
-                        <a href="tuoi_b12.html">
+                        <a href="chia_b12.html">
                             <div class="row">
                                 <button class="question-btn">Câu hỏi số 12</button>
                             </div>
                         </a>
-                        <a href="tuoi_b13.html">
+                        <a href="chia_b13.html">
                             <div class="row">
                                 <button class="question-btn">Câu hỏi số 13</button>
                             </div>
                         </a>
-                        <a href="tuoi_b14.html">
+                        <a href="chia_b14.html">
                             <div class="row">
                                 <button class="question-btn">Câu hỏi số 14</button>
+                            </div>
+                        </a>
+                        <a href="chia_b15.html">
+                            <div class="row">
+                                <button class="question-btn">Câu hỏi số 15</button>
+                            </div>
+                        </a>
+                        <a href="chia_b16.html">
+                            <div class="row">
+                                <button class="question-btn">Câu hỏi số 16</button>
                             </div>
                         </a>
                     </div>
@@ -195,10 +251,35 @@
     </div>
 
     <script>
+        function check(a1, a2, b1, b2, c1, c2, d1, d2, e1, e2, f1, f2) {
+            if ((a1 == 29 && a2 == 5) &&
+                (b1 == 31 && b2 == 4) &&
+                (c1 == 41 && c2 == 6) &&
+                (d1 == 44 && d2 == 5) &&
+                (e1 == 39 && e2 == 4) &&
+                (f1 == 59 && f2 == 6)
+            ) {
+                return 1;
+            } else {
+                return 0;
+            }
+        }
+
         function MyFunction() {
             var a1 = document.getElementById("a1").value;
             var a2 = document.getElementById("a2").value;
-            if (a1 == 5 && a2 == 5) {
+            var b1 = document.getElementById("b1").value;
+            var b2 = document.getElementById("b2").value;
+            var c1 = document.getElementById("c1").value;
+            var c2 = document.getElementById("c2").value;
+            var d1 = document.getElementById("d1").value;
+            var d2 = document.getElementById("d2").value;
+            var e1 = document.getElementById("e1").value;
+            var e2 = document.getElementById("e2").value;
+            var f1 = document.getElementById("f1").value;
+            var f2 = document.getElementById("f2").value;
+            if (check(a1, a2, b1, b2, c1, c2, d1, d2, e1, e2, f1, f2) == 1) {
+                // alert(x);
                 document.getElementById("tb").innerHTML = "Bạn đã trả lời đúng";
             } else {
                 document.getElementById("tb").innerHTML = "Tiếc quá! Bạn trả lời chưa chính xác rồi";

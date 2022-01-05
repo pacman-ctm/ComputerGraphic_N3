@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../../style.css" />
     <title>Nhóm 3</title>
 </head>
 
@@ -18,7 +18,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col p-4 d-flex justify-content-center align-items-center">
-                        <img src="icon.png" id="icon"> Nhóm 3
+                        <img src="../../image/icon.png" id="icon"> Nhóm 3
                     </div>
                     <div class="col p-4 d-flex justify-content-center align-items-center">
                         Chương 5. Tuổi
@@ -57,20 +57,53 @@
                             </h2>
                             <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    Mẹ của Anna hơn Anna 33 - 5 = 28 tuổi <br> Để tuổi mẹ gấp 5 lần tuổi con thì khoảng cách tuổi của mẹ và con sẽ ứng với 4 lần tuổi con <br> ⇒ Lúc đấy tuổi của Anna là: 28 ÷ 4 = 7 <br> ⇒ Đáp án: 7 - 5 = 2 năm <br>
-                                    <a href="tuoi_b12.html"><button class="btn btn-info mt-3">Đã hiểu</button></a>
+                                    Tuổi của chú Woody hiện tại: 38 + 4 = 42 tuổi <br> Tổng số tuổi của ba người hiện tại là: 38 + 42 + 8 = 88 tuổi <br> ⇒ Còn (100 - 88) ÷ 3 = 4 năm thì tổng số tuổi của ba người sẽ là 100 <br>
+                                    <a href="#"><button class="btn btn-info mt-3">Đã hiểu</button></a>
                                 </div>
                             </div>
                         </div>
                     </div><br>
 
-                    <div id="answer-field" class="row">
-                        <div class="col-8">
-                            Anna 5 tuổi. <br> Mẹ của em ấy 33 tuổi. <br> Hỏi bao nhiêu năm nữa thì tuổi của mẹ Anna sẽ nhiều gấp 5 lần tuổi của em ấy? <br>
-                            <br> Trả lời:
-                            <input class="answer-input" type="text" id="a1"> năm
 
+                    <div id="question" class="row">
+                        <div class="col">
+                            Cô Woody năm nay 38 tuổi. <br> Cô ấy trẻ hơn chú Woody 4 tuổi. <br> Con trai út của cô chú là Jim năm nay 8 tuổi. <br> Hỏi bao nhiêu năm nữa tổng số tuổi của cả ba người sẽ là 100? <br>
                         </div>
+                    </div>
+
+                    <div id="answer-field" class="row p-3 d-flex align-items-center">
+                        <div class="col-8 p-0 form-check align-items-center flex-wrap">
+                            <br>
+                            <div class="row">
+                                <div class="answer-btn col-1 d-flex align-items-center justify-content-center">
+                                    <input type="radio" name="answer" id="option1">
+                                </div>
+                                <label for="option1" class="form-check-label border col-10 d-flex align-items-center">
+                                    2 năm</label>
+                            </div>
+                            <br>
+
+                            <br>
+                            <div class="row">
+                                <div class="answer-btn col-1 d-flex align-items-center justify-content-center">
+                                    <input type="radio" name="answer" id="option2">
+                                </div>
+                                <label for="option2" class="form-check-label border col-10 d-flex align-items-center">
+                                    4 năm</label>
+                            </div>
+                            <br>
+
+                            <br>
+                            <div class="row">
+                                <div class="answer-btn col-1 d-flex align-items-center justify-content-center">
+                                    <input type="radio" name="answer" id="option3">
+                                </div>
+                                <label for="option3" class="form-check-label border col-10 d-flex align-items-center">
+                                    5 năm</label>
+                            </div>
+                            <br>
+                        </div>
+
                         <div class="col-4">
                             <img src="https://c.neh.tw/thumb/f/720/30a52719baee4e869d2a.jpg" class="img-fluid rounded-3">
                         </div>
@@ -97,8 +130,8 @@
                                             ...
                                         </div>
                                         <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" onclick="location.href='tuoi_b11.html'">Làm lại</button>
-                                            <button type="button" class="btn btn-primary" onclick="location.href='tuoi_b12.html'">Làm câu tiếp theo</button>
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" onclick="location.href='tuoi_b14.html'">Làm lại</button>
+                                            <!-- <button type="button" class="btn btn-primary" onclick="location.href='#'">Làm câu tiếp theo</button> -->
                                         </div>
                                     </div>
                                 </div>
@@ -167,7 +200,7 @@
                         </a>
                         <a href="tuoi_b11.html">
                             <div class="row">
-                                <button class="question-btn selected">Câu hỏi số 11</button>
+                                <button class="question-btn">Câu hỏi số 11</button>
                             </div>
                         </a>
                         <a href="tuoi_b12.html">
@@ -182,7 +215,7 @@
                         </a>
                         <a href="tuoi_b14.html">
                             <div class="row">
-                                <button class="question-btn">Câu hỏi số 14</button>
+                                <button class="question-btn selected">Câu hỏi số 14</button>
                             </div>
                         </a>
                     </div>
@@ -194,8 +227,8 @@
 
     <script>
         function MyFunction() {
-            var a1 = document.getElementById("a1").value;
-            if (a1 == 2) {
+            var x = document.getElementById("option2").checked;
+            if (x == true) {
                 document.getElementById("tb").innerHTML = "Bạn đã trả lời đúng";
             } else {
                 document.getElementById("tb").innerHTML = "Tiếc quá! Bạn trả lời chưa chính xác rồi";

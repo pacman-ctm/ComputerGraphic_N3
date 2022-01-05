@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../../style.css" />
     <title>Nhóm 3</title>
 </head>
 
@@ -18,7 +18,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col p-4 d-flex justify-content-center align-items-center">
-                        <img src="icon.png" id="icon"> Nhóm 3
+                        <img src="../../image/icon.png" id="icon"> Nhóm 3
                     </div>
                     <div class="col p-4 d-flex justify-content-center align-items-center">
                         Chương 5. Tuổi
@@ -48,7 +48,6 @@
         <div class="container shadow" id="content-field">
             <div class="row">
                 <div class="col-9 rounded p-5">
-
                     <div class="accordion" id="accordionExample">
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingOne">
@@ -58,56 +57,25 @@
                             </h2>
                             <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    Số tuổi Chloe ít hơn bố: 36 - 4 = 32 <br> Vì khoảng cách tuổi không thay đổi theo thời gian <br> ⇒ 8 năm nữa Chloe vẫn ít hơn bố 32 tuổi <br> ⇒ Đáp án: 32 tuổi <br>
-                                    <a href="tuoi_b3.html"><button class="btn btn-info mt-3">Đã hiểu</button></a>
+                                    Anh trai của Tom hơn Tom 11 - 6 = 5 tuổi <br> Vì khoảng cách tuổi không thay đổi nên 10 năm nữa anh trai của Tom vẫn hơn Tom 5 tuổi <br>
+                                    <a href="tuoi_b4.html"><button class="btn btn-info mt-3">Đã hiểu</button></a>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <br>
 
-                    <div id="question" class="row">
-                        <div class="col">
-                            Chloe 4 tuổi. <br> Bố của em ấy 36 tuổi. <br> Hỏi 8 năm nữa Chloe sẽ ít hơn bố bao nhiêu tuổi?
+
+                    <div id="answer-field" class="row">
+                        <div class="col-8">
+                            Tom 6 tuổi. <br> Anh trai của bạn ấy 11 tuổi. <br> Vậy anh trai của Tom hơn Tom
+                            <input class="answer-input" type="text" id="a1"> tuổi <br> Và trong 10 năm nữa Tom sẽ ít hơn anh trai của mình
+                            <input class="answer-input" type="text" id="a2"> tuổi
                         </div>
-                    </div>
-
-                    <div id="answer-field" class="row p-3 d-flex align-items-center">
-                        <div class="col-8 p-0 form-check align-items-center flex-wrap">
-                            <br>
-                            <div class="row">
-                                <div class="answer-btn col-1 d-flex align-items-center justify-content-center">
-                                    <input type="radio" name="answer" id="option1">
-                                </div>
-                                <label for="option1" class="form-check-label border col-10 d-flex align-items-center">30
-                                    tuổi</label>
-                            </div>
-                            <br>
-
-                            <br>
-                            <div class="row">
-                                <div class="answer-btn col-1 d-flex align-items-center justify-content-center">
-                                    <input type="radio" name="answer" id="option2">
-                                </div>
-                                <label for="option2" class="form-check-label border col-10 d-flex align-items-center">
-                                    31 tuổi</label>
-                            </div>
-                            <br>
-
-                            <br>
-                            <div class="row">
-                                <div class="answer-btn col-1 d-flex align-items-center justify-content-center">
-                                    <input type="radio" name="answer" id="option3">
-                                </div>
-                                <label for="option3" class="form-check-label border col-10 d-flex align-items-center">32
-                                    tuổi</label>
-                            </div>
-                            <br>
-                        </div>
-
                         <div class="col-4">
                             <img src="https://c.neh.tw/thumb/f/720/30a52719baee4e869d2a.jpg" class="img-fluid rounded-3">
                         </div>
+
                     </div>
 
                     <div class="row justify-content-center mt-5">
@@ -131,8 +99,8 @@
                                             ...
                                         </div>
                                         <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" onclick="location.href='tuoi_b2.html'">Làm lại</button>
-                                            <button type="button" class="btn btn-primary" onclick="location.href='tuoi_b3.html'">Làm câu tiếp theo</button>
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" onclick="location.href='tuoi_b3.html'">Làm lại</button>
+                                            <button type="button" class="btn btn-primary" onclick="location.href='tuoi_b4.html'">Làm câu tiếp theo</button>
                                         </div>
                                     </div>
                                 </div>
@@ -156,12 +124,12 @@
                         </a>
                         <a href="tuoi_b2.html">
                             <div class="row">
-                                <button class="question-btn selected">Câu hỏi số 2</button>
+                                <button class="question-btn">Câu hỏi số 2</button>
                             </div>
                         </a>
                         <a href="tuoi_b3.html">
                             <div class="row">
-                                <button class="question-btn">Câu hỏi số 3</button>
+                                <button class="question-btn selected">Câu hỏi số 3</button>
                             </div>
                         </a>
                         <a href="tuoi_b4.html">
@@ -228,8 +196,9 @@
 
     <script>
         function MyFunction() {
-            var x = document.getElementById("option3").checked;
-            if (x == true) {
+            var a1 = document.getElementById("a1").value;
+            var a2 = document.getElementById("a2").value;
+            if (a1 == 5 && a2 == 5) {
                 document.getElementById("tb").innerHTML = "Bạn đã trả lời đúng";
             } else {
                 document.getElementById("tb").innerHTML = "Tiếc quá! Bạn trả lời chưa chính xác rồi";

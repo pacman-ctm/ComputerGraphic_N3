@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/ComputerGraphic_N3/style.css" />
+    <link rel="stylesheet" href="../../style.css" />
     <title>Nhóm 3</title>
 </head>
 
@@ -19,7 +19,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col p-4 d-flex justify-content-center align-items-center">
-                        <img src="icon.png" id="icon"> Nhóm 3
+                        <img src="../../image/icon.png" id="icon"> Nhóm 3
                     </div>
                     <div class="col p-4 d-flex justify-content-center align-items-center">
                         Chương 6. Phép chia
@@ -58,20 +58,21 @@
                             </h2>
                             <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    Ta có: <b>Số chia nhỏ nhất</b> = <b>Số dư</b> + <b>1</b> <br>
+                                    Vì số dư bằng 0 có nghĩa là phép chia không có dư, nên số dư nhỏ nhất ở đây phải là 1. <br>
                                     <ol type="a">
-                                        <li> <b>29</b> : <b>5</b> = 5 dư 4 </li>
-                                        <li> <b>31</b> : <b>4</b> = 7 dư 3 </li>
-                                        <li> <b>41</b> : <b>6</b> = 6 dư 5 </li>
-                                        <li> <b>44</b> : <b>5</b> = 8 dư 4 </li>
-                                        <li> <b>39</b> : <b>4</b> = 9 dư 3 </li>
-                                        <li> <b>59</b> : <b>6</b> = 9 dư 5 </li>
+                                        <li> Vì số cần tìm chia 6 = 5 dư 1, nên đáp án cần tìm là <b>31</b> chia 6 = 5 dư <b>1</b></li>
+                                        <li> Vì số cần tìm chia 6 = 5 dư 1, nên đáp án cần tìm là <b>50</b> chia 7 = 7 dư <b>1</b></li>
+                                        <li> Vì số cần tìm chia 6 = 5 dư 1, nên đáp án cần tìm là <b>57</b> chia 8 = 7 dư <b>1</b></li>
+                                        <li> Vì số cần tìm chia 6 = 5 dư 1, nên đáp án cần tìm là <b>64</b> chia 9 = 7 dư <b>1</b></li>
                                     </ol>
-                                    <a href="chia_b6.html"><button class="btn btn-info mt-3">Đã hiểu</button></a>
+                                    <a href="chia_b4.html"><button class="btn btn-info mt-3">Đã hiểu</button></a>
                                 </div>
                             </div>
                         </div>
                     </div><br>
+
+
+
                     <!-- <div class="row mb-4 border" id="explain-field">
                         <div class="col">
                             <div class="row explain-banner">
@@ -81,16 +82,7 @@
                             </div>
                             <div class="row explain-content">
                                 <div class="col p-4">
-                                    Ta có: <b>Số chia nhỏ nhất</b> = <b>Số dư</b> + <b>1</b> <br>
-                                    <ol type="a">
-                                        <li> 29 : 5 = <b>5</b> dư <b>4</b> </li>
-                                        <li> 31 : 4 = <b>7</b> dư <b>3</b> </li>
-                                        <li> 41 : 6 = <b>6</b> dư <b>5</b> </li>
-                                        <li> 44 : 5 = <b>8</b> dư <b>4</b> </li>
-                                        <li> 39 : 4 = <b>9</b> dư <b>3</b> </li>
-                                        <li> 59 : 6 = <b>9</b> dư <b>5</b> </li>
-                                    </ol>
-                                    <a href="chia_b4.html"><button class="btn btn-info mt-3">Đã hiểu</button></a>
+
                                 </div>
                             </div>
                         </div>
@@ -98,26 +90,24 @@
 
                     <div id="answer-field" class="row">
                         <div class="col">
-                            Điền số thích hợp vào ô trống để có được số chia nhỏ nhất và số chia đó phải lớn hơn số dư:
+                            Điền số thích hợp vào ô trống sao cho có được số dư nhỏ nhất: <br>
                             <ol type="a">
                                 <li>
-                                    <input class="answer-input" type="text" id="a1"> : <input class="answer-input" type="text" id="a2"> = 5 dư 4
-                                </li> <br>
+                                    <input class="answer-input" type="text" id="a1"> chia 6 = 5 dư
+                                    <input class="answer-input" type="text" id="a2">
+                                </li><br>
                                 <li>
-                                    <input class="answer-input" type="text" id="b1"> : <input class="answer-input" type="text" id="b2"> = 7 dư 3
-                                </li> <br>
+                                    <input class="answer-input" type="text" id="b1"> chia 7 = 7 dư
+                                    <input class="answer-input" type="text" id="b2">
+                                </li><br>
                                 <li>
-                                    <input class="answer-input" type="text" id="c1"> : <input class="answer-input" type="text" id="c2"> = 6 dư 5
-                                </li> <br>
+                                    <input class="answer-input" type="text" id="c1"> chia 8 = 7 dư
+                                    <input class="answer-input" type="text" id="c2">
+                                </li><br>
                                 <li>
-                                    <input class="answer-input" type="text" id="d1"> : <input class="answer-input" type="text" id="d2"> = 8 dư 4
-                                </li> <br>
-                                <li>
-                                    <input class="answer-input" type="text" id="e1"> : <input class="answer-input" type="text" id="e2"> = 9 dư 3
-                                </li> <br>
-                                <li>
-                                    <input class="answer-input" type="text" id="f1"> : <input class="answer-input" type="text" id="f2"> = 9 dư 5
-                                </li> <br>
+                                    <input class="answer-input" type="text" id="d1"> chia 9 = 7 dư
+                                    <input class="answer-input" type="text" id="d2">
+                                </li>
 
                             </ol>
 
@@ -145,8 +135,8 @@
                                             ...
                                         </div>
                                         <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" onclick="location.href='chia_b5.html'">Làm lại</button>
-                                            <button type="button" class="btn btn-primary" onclick="location.href='6.html'">Làm câu tiếp theo</button>
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" onclick="location.href='chia_b3.html'">Làm lại</button>
+                                            <button type="button" class="btn btn-primary" onclick="location.href='chia_b4.html'">Làm câu tiếp theo</button>
                                         </div>
                                     </div>
                                 </div>
@@ -175,7 +165,7 @@
                         </a>
                         <a href="chia_b3.html">
                             <div class="row">
-                                <button class="question-btn">Câu hỏi số 3</button>
+                                <button class="question-btn selected">Câu hỏi số 3</button>
                             </div>
                         </a>
                         <a href="chia_b4.html">
@@ -185,7 +175,7 @@
                         </a>
                         <a href="chia_b5.html">
                             <div class="row">
-                                <button class="question-btn selected">Câu hỏi số 5</button>
+                                <button class="question-btn">Câu hỏi số 5</button>
                             </div>
                         </a>
                         <a href="chia_b6.html">
@@ -251,13 +241,11 @@
     </div>
 
     <script>
-        function check(a1, a2, b1, b2, c1, c2, d1, d2, e1, e2, f1, f2) {
-            if ((a1 == 29 && a2 == 5) &&
-                (b1 == 31 && b2 == 4) &&
-                (c1 == 41 && c2 == 6) &&
-                (d1 == 44 && d2 == 5) &&
-                (e1 == 39 && e2 == 4) &&
-                (f1 == 59 && f2 == 6)
+        function check(a1, a2, b1, b2, c1, c2, d1, d2) {
+            if ((a1 == 31 && a2 == 1) &&
+                (b1 == 50 && b2 == 1) &&
+                (c1 == 57 && c2 == 1) &&
+                (d1 == 64 && d2 == 1)
             ) {
                 return 1;
             } else {
@@ -274,11 +262,7 @@
             var c2 = document.getElementById("c2").value;
             var d1 = document.getElementById("d1").value;
             var d2 = document.getElementById("d2").value;
-            var e1 = document.getElementById("e1").value;
-            var e2 = document.getElementById("e2").value;
-            var f1 = document.getElementById("f1").value;
-            var f2 = document.getElementById("f2").value;
-            if (check(a1, a2, b1, b2, c1, c2, d1, d2, e1, e2, f1, f2) == 1) {
+            if (check(a1, a2, b1, b2, c1, c2, d1, d2) == 1) {
                 // alert(x);
                 document.getElementById("tb").innerHTML = "Bạn đã trả lời đúng";
             } else {
