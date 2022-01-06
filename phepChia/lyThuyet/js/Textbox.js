@@ -7,6 +7,7 @@ class Textbx extends Elem
 		this.n = 1;
       this.w = 1;
       this.h = 1;
+		this.margintop = 0;
 	}
 
 	fit() {
@@ -28,6 +29,10 @@ class Textbx extends Elem
       this.h = h;
    }
 
+	setMargintop(margintop) {
+		this.margintop = margintop;
+	}
+
    fit () {
       this.width = this.parent.offsetWidth * this.w;
       this.height = this.width * this.h;
@@ -45,6 +50,7 @@ class Textbx extends Elem
       let background = this.background;
       const realbackground = this.background;
 		let scaleText = this.scaleText;
+		let margintop = this.margintop;
 		s.setup = function () {
 			canvas = s.createCanvas(width, height);
 			canvas.class('textbutton');
@@ -58,7 +64,7 @@ class Textbx extends Elem
          s.textWrap(s.WORD);
 			s.fill(textColor);
 			s.textSize(height * scaleText);
-  			s.text(text, 0, 0, width, height);
+  			s.text(text, 0, margintop, width, height);
 		}
 	}
 }
