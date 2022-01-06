@@ -4,6 +4,7 @@ class AgeBarController {
   static BAR_WIDTH = 50;
   static SPACE_AFTER_TEXT = 50;
   static FONT_SIZE = 30;
+  static FONT_FAMILY = "Be Vietnam Pro";
 
   #age;
   #divisor;
@@ -12,10 +13,20 @@ class AgeBarController {
   #y;
   #primaryColor;
   #secondaryColor;
+  #tile;
   #text;
   #bar;
 
-  constructor(two, x, y, age, primaryColor, secondaryColor, divisor = 1) {
+  constructor(
+    two,
+    x,
+    y,
+    title,
+    age,
+    primaryColor,
+    secondaryColor,
+    divisor = 1
+  ) {
     this.#age = age;
     this.#divisor = divisor;
     this.#two = two;
@@ -23,9 +34,22 @@ class AgeBarController {
     this.#y = y;
     this.#primaryColor = primaryColor;
     this.#secondaryColor = secondaryColor;
+    this.$title = two.makeText(
+      title,
+      x + AgeBarController.SPACE_AFTER_TEXT,
+      y - AgeBarController.SPACE_AFTER_TEXT,
+      {
+        size: AgeBarController.FONT_SIZE,
+        alignment: "left",
+        family: AgeBarController.FONT_FAMILY,
+        weight: 700,
+        fill: primaryColor,
+      }
+    );
     this.#text = two.makeText(age, x, y, {
       size: AgeBarController.FONT_SIZE,
       alignment: "left",
+      family: AgeBarController.FONT_FAMILY,
       weight: 700,
       fill: primaryColor,
     });
@@ -87,6 +111,7 @@ const DASHES_ARRAY = [4, 4];
 const BOTTOM_LINE_WIDTH = 3;
 const SPACE_BEFORE_TEXT = 25;
 const FONT_SIZE = 16;
+const FONT_FAMILY = "Be Vietnam Pro";
 
 const createDifferenceBar = (x, y, width, height, message) => {
   const differenceBar = new Two.Rectangle(0, 0, width, height).noFill();
@@ -103,7 +128,7 @@ const createDifferenceBar = (x, y, width, height, message) => {
     message,
     boundingBox.left + (boundingBox.right - boundingBox.left) / 2,
     boundingBox.bottom + SPACE_BEFORE_TEXT,
-    { size: FONT_SIZE }
+    { size: FONT_SIZE, family: FONT_FAMILY }
   );
   const group = new Two.Group(differenceBar, line, text);
   group.translation.set(x, y);
@@ -123,22 +148,26 @@ const x =
     AgeBarController.SPACE_AFTER_TEXT) /
   2;
 const y = two.height / 2;
+const firstColor = "#e07a5f";
+const secondColor = "#81b29a";
 const parentAge = new AgeBarController(
   two,
   x,
-  y - 50,
+  y - 60,
+  "Tuổi phụ huynh",
   PARENT_INIT_AGE,
-  "red",
-  "blue",
+  firstColor,
+  secondColor,
   CHILD_INIT_AGE
 );
 const childAge = new AgeBarController(
   two,
   x,
-  y + 50,
+  y + 60,
+  "Tuổi con",
   CHILD_INIT_AGE,
-  "blue",
-  "blue",
+  secondColor,
+  secondColor,
   CHILD_INIT_AGE
 );
 
