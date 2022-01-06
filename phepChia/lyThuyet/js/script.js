@@ -35,7 +35,7 @@ function render() {
 		candytitle2.fitParent("content");
 		candytitle2.setMargintop(candytitle2.height * 0.13);
 		candytitle2.setScaleText(0.2);
-		candytitle2.setText("Oh, "+String(so_bi_chia)+" không thể chia hết cho 0");
+		candytitle2.setText("Oh, "+String(so_bi_chia)+" không thể hết cho 0");
 		candytitle2.draw();
 		return;
 	}
