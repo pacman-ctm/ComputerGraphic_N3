@@ -130,9 +130,9 @@ document.getElementById('desDiv').addEventListener("click", function () {
 });
 
 document.getElementById('nextPage').addEventListener("click", function () {
-	location.href = "#";
+	location.href = "../../phepChia/baiTap/chia_b1.html";
 });
 
 document.getElementById('prevPage').addEventListener("click", function () {
-	location.href = "#";
+	location.href = "../../menu.html";
 });
