@@ -1,0 +1,12 @@
+#form {
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  width: 40%;
+  translate: -50% 0;
+  z-index: 100;
+}
+
+#year-slider {
+  width: 100%;
+}
