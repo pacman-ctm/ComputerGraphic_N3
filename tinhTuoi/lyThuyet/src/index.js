@@ -14,22 +14,26 @@ const x =
     AgeBarController.SPACE_AFTER_TEXT) /
   2;
 const y = two.height / 2;
+const firstColor = "#e07a5f";
+const secondColor = "#81b29a";
 const parentAge = new AgeBarController(
   two,
   x,
-  y - 50,
+  y - 60,
+  "Tuổi phụ huynh",
   PARENT_INIT_AGE,
-  "red",
-  "blue",
+  firstColor,
+  secondColor,
   CHILD_INIT_AGE
 );
 const childAge = new AgeBarController(
   two,
   x,
-  y + 50,
+  y + 60,
+  "Tuổi con",
   CHILD_INIT_AGE,
-  "blue",
-  "blue",
+  secondColor,
+  secondColor,
   CHILD_INIT_AGE
 );
 
