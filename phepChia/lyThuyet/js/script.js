@@ -126,8 +126,10 @@ document.getElementById('incCandy').addEventListener("click", function () {
 });
 
 document.getElementById('desCandy').addEventListener("click", function () {
-	--so_bi_chia;
-	reRender();
+	if (so_bi_chia > 0) {
+		--so_bi_chia;
+		reRender();
+	}
 });
 
 document.getElementById('incDiv').addEventListener("click", function () {
@@ -136,7 +138,7 @@ document.getElementById('incDiv').addEventListener("click", function () {
 });
 
 document.getElementById('desDiv').addEventListener("click", function () {
-	if (so_chia >= 0) {
+	if (so_chia > 0) {
 		--so_chia;
 		reRender();
 	}
