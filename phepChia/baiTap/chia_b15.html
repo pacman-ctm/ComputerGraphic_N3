@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../../style.css" />
     <title>Nhóm 3</title>
 </head>
@@ -48,7 +49,24 @@
             <div class="row">
                 <!-- content question + answer-->
                 <div class="col-9 rounded p-5">
-                    <div class="row mb-4 border" id="explain-field">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    <i class="bi bi-lightbulb"></i> &nbsp; Giải thích
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    - Ta sẽ liệt kê danh sách các bội số của 3 và 5<br> 3, 6, 9, 12, 15, 18, 21, ... <br> 5, 10, 15, 20, 25, 30, 35, ... <br> - Cộng thêm 1 đơn vị vào các bội số đó. <br> 4, 7, 10, 13, <i>16</i>, 19, 22, ... <br> 6, 11,
+                                    <i>16</i>, 21, 26, 31, 36, ... <br> - Số có 2 chữ số chung giữa hai dãy là <i>16</i>.<br> - Ta có: 16 ÷ 5 = 3 dư 1 và 16 ÷ 3 = 5 dư 1 <br> ⇒ Số có hai chữ số cần tìm là <strong>16</strong><br>
+                                    <a href="chia_b16.html"><button class="btn btn-info mt-3">Đã hiểu</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div><br>
+
+                    <!-- <div class="row mb-4 border" id="explain-field">
                         <div class="col">
                             <div class="row explain-banner">
                                 <div class="col d-flex align-items-center">
@@ -57,26 +75,16 @@
                             </div>
                             <div class="row explain-content">
                                 <div class="col p-4">
-                                    - Ta sẽ liệt kê danh sách các bội số của 3 và 5<br>
-                                    3, 6, 9, 12, 15, 18, 21, ... <br>
-                                    5, 10, 15, 20, 25, 30, 35, ... <br>
-                                    - Cộng thêm 1 đơn vị vào các bội số đó. <br>
-                                    4, 7, 10, 13, <i>16</i>, 19, 22, ... <br>
-                                    6, 11, <i>16</i>, 21, 26, 31, 36, ... <br>
-                                    - Số có 2 chữ số chung giữa hai dãy là <i>16</i>.<br>
-                                    - Ta có: 16 ÷ 5 = 3 dư 1 và 16 ÷ 3 = 5 dư 1 <br>
-                                    ⇒ Số có hai chữ số cần tìm là <strong>16</strong><br>
-                                    <a href="chia_b16.html"><button class="btn btn-info mt-3">Đã hiểu</button></a>
+                                    
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
                     <div id="question" class="row">
                         <div class="col">
                             <div class="q15">Một số có 2 chữ số có số dư là 1 khi chia cho 3. Nó cũng có số dư là 1 khi chia cho 5.</div>
-                            <br>
-                            Hỏi đó là số nào?
+                            <br> Hỏi đó là số nào?
                             <!-- <input class="answer-input" type="text"> -->
                         </div>
                     </div>
@@ -112,14 +120,37 @@
                             <br>
                         </div>
                         <div class="col-4">
-                            <img src="https://i.pinimg.com/originals/dc/d6/2e/dcd62e7534bb56930e6f0f3fed1d7560.jpg"
-                                class="img-fluid rounded-3">
+                            <img src="https://i.pinimg.com/originals/dc/d6/2e/dcd62e7534bb56930e6f0f3fed1d7560.jpg" class="img-fluid rounded-3">
                         </div>
                     </div>
 
                     <div class="row justify-content-center mt-5">
                         <div class="col-3 d-flex justify-content-center">
-                            <input type="submit" class="btn btn-success" value="Trả lời">
+                            <!-- <input type="submit" class="btn btn-success" value="Trả lời"> -->
+
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="MyFunction()">
+                                Trả lời
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Thông báo</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body" id="tb">
+                                            ...
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" onclick="location.href='chia_b15.html'">Làm lại</button>
+                                            <button type="button" class="btn btn-primary" onclick="location.href='chia_b16.html'">Làm câu tiếp theo</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -219,6 +250,17 @@
         </div>
 
     </div>
+
+    <script>
+        function MyFunction() {
+            var x = document.getElementById("option3").checked;
+            if (x == true) {
+                document.getElementById("tb").innerHTML = "Bạn đã trả lời đúng";
+            } else {
+                document.getElementById("tb").innerHTML = "Tiếc quá! Bạn trả lời chưa chính xác rồi";
+            }
+        }
+    </script>
 
 </body>
 
