@@ -13,7 +13,23 @@
     <title>Nhóm 3</title>
 </head>
 
+<style>
+    .col {
+        text-align: center;
+    }
+    
+    #container {
+        width: 200px;
+    }
+    
+    input {
+        width: 30px;
+        text-align: center;
+    }
+</style>
+
 <body>
+
     <div class="container-fluid pb-5">
         <div class="row pl-5" id="header-field">
             <div class="container">
@@ -43,57 +59,253 @@
             <div class="row">
                 <div class="col-9 rounded p-5">
 
-                    <div class="row mb-4 border" id="explain-field">
-                        <div class="col">
-                            <div class="row explain-banner">
-                                <div class="col d-flex align-items-center">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                                     <i class="bi bi-lightbulb"></i> &nbsp; Giải thích
-                                </div>
-                            </div>
-                            <div class="row explain-content">
-                                <div class="col p-4">
-                                    Vì số dư bằng 0 có nghĩa là phép chia không có dư, nên số dư nhỏ nhất ở đây phải là 1. <br>
-                                    <ol type="a">
-                                        <li> Vì số cần tìm chia 6 = 5 dư 1, nên số cần tìm là 5 x 6 + 1 = 31</li>
-                                        <li> Vì số cần tìm chia 6 = 5 dư 1, nên số cần tìm là 7 x 7 + 1 = 50</li>
-                                        <li> Vì số cần tìm chia 6 = 5 dư 1, nên số cần tìm là 7 x 8 + 1 = 57</li>
-                                        <li> Vì số cần tìm chia 6 = 5 dư 1, nên số cần tìm là 7 x 9 + 1 = 64</li>
-                                    </ol>
-                                    <a href="chia_b4.html"><button class="btn btn-info mt-3">Đã hiểu</button></a>
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+
+                                    <div id="answer-field" class="row">
+                                        <div class="col">
+                                            <div id="container" class="m-5">
+                                                <div class="row">
+                                                    <div class="col-3">
+                                                        <div class="row mb-1">
+                                                            <div class="col pb-1">
+                                                                3
+                                                            </div>
+                                                        </div>
+                                                        <div class="row mb-1 border-bottom border-dark">
+                                                            <div class="col pb-1">
+                                                                <b>3</b>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-3 border-end border-dark">
+                                                        <div class="row mb-1">
+                                                            <div class="col pb-1">
+                                                                6
+                                                            </div>
+                                                        </div>
+                                                        <div class="row mb-1 border-bottom border-dark">
+                                                            <div class="col pb-1">
+                                                                <b>5</b>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                1
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <div class="row mb-1 border-bottom border-dark">
+                                                            <div class="col pb-1">
+                                                                7
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                <b>5</b>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col">
+                                            <div id="container" class="m-5">
+                                                <div class="row">
+                                                    <div class="col-3">
+                                                        <div class="row mb-1">
+                                                            <div class="col pb-1">
+                                                                4
+                                                            </div>
+                                                        </div>
+                                                        <div class="row mb-1 border-bottom border-dark">
+                                                            <div class="col pb-1">
+                                                                <b>4</b>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-3 border-end border-dark">
+                                                        <div class="row mb-1">
+                                                            <div class="col pb-1">
+                                                                5
+                                                            </div>
+                                                        </div>
+                                                        <div class="row mb-1 border-bottom border-dark">
+                                                            <div class="col pb-1">
+                                                                <b>2</b>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                <b>3</b>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <div class="row mb-1 border-bottom border-dark">
+                                                            <div class="col pb-1">
+                                                                6
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                <b>7</b>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <a href="chia_b1.html"><button class="btn btn-info mt-3">Đã hiểu</button></a>
                                 </div>
                             </div>
                         </div>
-                    </div><br>
+                    </div><br> Điền số thích hợp vào các ô trống để tạo được các phép chia đúng:
 
                     <div id="answer-field" class="row">
-                        <div class="col">
-                            Điền số thích hợp vào ô trống sao cho có được số dư nhỏ nhất:
-                            <ol type="a">
-                                <li>
-                                    <input class="answer-input" type="text"> chia 6 = 5 dư
-                                    <input class="answer-input" type="text">
-                                </li>
-                                <li>
-                                    <input class="answer-input" type="text"> chia 7 = 7 dư
-                                    <input class="answer-input" type="text">
-                                </li>
-                                <li>
-                                    <input class="answer-input" type="text"> chia 8 = 7 dư
-                                    <input class="answer-input" type="text">
-                                </li>
-                                <li>
-                                    <input class="answer-input" type="text"> chia 9 = 7 dư
-                                    <input class="answer-input" type="text">
-                                </li>
 
-                            </ol>
+                        <div class="col">
+                            <div id="container" class="m-5">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <div class="row mb-1">
+                                            <div class="col pb-1">
+                                                3
+                                            </div>
+                                        </div>
+                                        <div class="row mb-1 border-bottom border-dark">
+                                            <div class="col pb-1">
+                                                <input type="text" id="a1">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 border-end border-dark">
+                                        <div class="row mb-1">
+                                            <div class="col pb-1">
+                                                6
+                                            </div>
+                                        </div>
+                                        <div class="row mb-1 border-bottom border-dark">
+                                            <div class="col pb-1">
+                                                <input type="text" id="a2">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col">
+                                                1
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="row mb-1 border-bottom border-dark">
+                                            <div class="col pb-1">
+                                                7
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col">
+                                                <input type="text" id="a3">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col">
+                            <div id="container" class="m-5">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <div class="row mb-1">
+                                            <div class="col pb-1">
+                                                4
+                                            </div>
+                                        </div>
+                                        <div class="row mb-1 border-bottom border-dark">
+                                            <div class="col pb-1">
+                                                <input type="text" id="b1">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 border-end border-dark">
+                                        <div class="row mb-1">
+                                            <div class="col pb-1">
+                                                5
+                                            </div>
+                                        </div>
+                                        <div class="row mb-1 border-bottom border-dark">
+                                            <div class="col pb-1">
+                                                <input type="text" id="b2">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col">
+                                                <input type="text" id="b3">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="row mb-1 border-bottom border-dark">
+                                            <div class="col pb-1">
+                                                6
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col">
+                                                <input type="text" id="b4">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
 
                         </div>
                     </div>
 
                     <div class="row justify-content-center mt-5">
                         <div class="col-3 d-flex justify-content-center">
-                            <input type="submit" class="btn btn-success" value="Trả lời">
+                            <!-- <input type="submit" class="btn btn-success" value="Trả lời"> -->
+
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="MyFunction()">
+                                Trả lời
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Thông báo</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body" id="tb">
+                                            ...
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" onclick="location.href='chia_b1.html'">Làm lại</button>
+                                            <button type="button" class="btn btn-primary" onclick="location.href='chia_b2.html'">Làm câu tiếp theo</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -192,6 +404,34 @@
         </div>
 
     </div>
+
+    <script>
+        function check(a1, a2, a3, b1, b2, b3, b4) {
+            if (a1 == 3 && a2 == 5 && a3 == 5 &&
+                b1 == 4 && b2 == 2 && b3 == 3 && b4 == 7
+            ) {
+                return 1;
+            } else {
+                return 0;
+            }
+        }
+
+        function MyFunction() {
+            var a1 = document.getElementById("a1").value;
+            var a2 = document.getElementById("a2").value;
+            var a3 = document.getElementById("a3").value;
+            var b1 = document.getElementById("b1").value;
+            var b2 = document.getElementById("b2").value;
+            var b3 = document.getElementById("b3").value;
+            var b4 = document.getElementById("b4").value;
+            if (check(a1, a2, a3, b1, b2, b3, b4) == 1) {
+                // alert(x);
+                document.getElementById("tb").innerHTML = "Bạn đã trả lời đúng";
+            } else {
+                document.getElementById("tb").innerHTML = "Tiếc quá! Bạn trả lời chưa chính xác rồi";
+            }
+        }
+    </script>
 
 </body>
 
