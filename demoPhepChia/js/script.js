@@ -134,5 +134,5 @@ document.getElementById('nextPage').addEventListener("click", function () {
 });
 
 document.getElementById('prevPage').addEventListener("click", function () {
-	location.href = "../../menu.html";
+	location.href = "../../index.html";
 });
