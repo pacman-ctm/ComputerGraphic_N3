@@ -29,6 +29,19 @@ function render() {
 
 	enter.draw();
 
+	if (so_chia == 0) {
+		let candytitle2 = new Textbx();
+		candytitle2.setScale(1, 0.5);
+		candytitle2.fitParent("content");
+		candytitle2.setMargintop(candytitle2.height * 0.13);
+		candytitle2.setScaleText(0.2);
+		candytitle2.setText("Oh, "+String(so_bi_chia)+" không thể hết cho 0");
+		candytitle2.draw();
+		return;
+	}
+
+	thuong = Math.trunc(so_bi_chia/so_chia);
+
 	let candytitle2 = new Textbx();
 	candytitle2.setScale(0.2, 0.3);
 	candytitle2.fitParent("content");
@@ -36,7 +49,6 @@ function render() {
 	candytitle2.setText("Ở mỗi phần có "+String(thuong)+" viên kẹo");
 	candytitle2.draw();
 
-	thuong = Math.trunc(so_bi_chia/so_chia);
 	let candy2 = new Candy();
 	candy2.fitParent("content");
 	candy2.setScale(0.2);
@@ -115,8 +127,10 @@ document.getElementById('incCandy').addEventListener("click", function () {
 });
 
 document.getElementById('desCandy').addEventListener("click", function () {
-	--so_bi_chia;
-	reRender();
+	if (so_bi_chia > 0) {
+		--so_bi_chia;
+		reRender();
+	}
 });
 
 document.getElementById('incDiv').addEventListener("click", function () {
@@ -125,14 +139,16 @@ document.getElementById('incDiv').addEventListener("click", function () {
 });
 
 document.getElementById('desDiv').addEventListener("click", function () {
-	--so_chia;
-	reRender();
+	if (so_chia > 0) {
+		--so_chia;
+		reRender();
+	}
 });
 
 document.getElementById('nextPage').addEventListener("click", function () {
-	location.href = "../../baiTap/chia_b1.html";
+	location.href = "../baiTap/chia_b1.html";
 });
 
 document.getElementById('prevPage').addEventListener("click", function () {
-	location.href = "../../../index.html";
+	location.href = "../../index.html";
 });

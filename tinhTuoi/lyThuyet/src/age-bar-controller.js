@@ -4,6 +4,7 @@ class AgeBarController {
   static BAR_WIDTH = 50;
   static SPACE_AFTER_TEXT = 50;
   static FONT_SIZE = 30;
+  static FONT_FAMILY = "Be Vietnam Pro";
 
   #age;
   #divisor;
@@ -12,10 +13,20 @@ class AgeBarController {
   #y;
   #primaryColor;
   #secondaryColor;
+  #tile;
   #text;
   #bar;
 
-  constructor(two, x, y, age, primaryColor, secondaryColor, divisor = 1) {
+  constructor(
+    two,
+    x,
+    y,
+    title,
+    age,
+    primaryColor,
+    secondaryColor,
+    divisor = 1
+  ) {
     this.#age = age;
     this.#divisor = divisor;
     this.#two = two;
@@ -23,9 +34,22 @@ class AgeBarController {
     this.#y = y;
     this.#primaryColor = primaryColor;
     this.#secondaryColor = secondaryColor;
+    this.$title = two.makeText(
+      title,
+      x + AgeBarController.SPACE_AFTER_TEXT,
+      y - AgeBarController.SPACE_AFTER_TEXT,
+      {
+        size: AgeBarController.FONT_SIZE,
+        alignment: "left",
+        family: AgeBarController.FONT_FAMILY,
+        weight: 700,
+        fill: primaryColor,
+      }
+    );
     this.#text = two.makeText(age, x, y, {
       size: AgeBarController.FONT_SIZE,
       alignment: "left",
+      family: AgeBarController.FONT_FAMILY,
       weight: 700,
       fill: primaryColor,
     });
