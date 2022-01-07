@@ -58,6 +58,7 @@ class Elem {
 		let height = this.height;
 		s.setup = function () {
 			let canvas = s.createCanvas(width, height);
+			s.noLoop();
 		}
 		s.draw = function () {
 			s.background('red');
@@ -108,25 +109,33 @@ class Candy extends Elem
 		s.setup = function () {
 			canvas = s.createCanvas(width, height);
 			s.colorMode(s.HSB, 180, 100, 100);
-			s.frameRate(5);
+			// s.frameRate(5);
 			s.noStroke();
+			s.noLoop();
 			canvas.class('candy');
 			canvas.mouseClicked (function () {
 				if (boxed) {
 					boxed = false;
 					s.clear();
+					s.redraw();
 				}
 				else {
 					boxed = true;
 					s.background(background);
+					s.redraw();
 				}
 			});
 			canvas.mouseOver(function () {
-            s.background(background);
+				if (!boxed) {
+					s.background(background);
+					s.redraw();
+				}
          });
          canvas.mouseOut(function () {
-				if (!boxed)
+				if (!boxed) {
             	s.clear();
+					s.redraw();
+				}
          });
 		}
 		s.draw = function () {
@@ -147,7 +156,7 @@ class Candy extends Elem
 	setnCandy(n=1) {
 		this.n = n;
 	}
-};
+}
 
 class Textbt extends Elem
 {
@@ -191,13 +200,16 @@ class Textbt extends Elem
 			canvas.class('textbutton');
          if (id != null)
             canvas.id(id);
+			s.noLoop();
          canvas.mouseOver(function () {
             background = "black";
             textColor = "white";
+				s.redraw();
          });
          canvas.mouseOut(function () {
             background = realbackground;
             textColor = "black";
+				s.redraw();
          });
 		}
 		s.draw = function () {
@@ -268,6 +280,7 @@ class Textbx extends Elem
 			canvas.class('textbutton');
          if (id != null)
             canvas.id(id);
+			s.noLoop();
 		}
 		s.draw = function () {
          if (background != -1)
@@ -285,12 +298,18 @@ let so_bi_chia = 32;
 let so_chia = 4;
 let thuong = Math.trunc(so_bi_chia/so_chia);
 
+let enter = new Textbx();
+let candytitle = new Textbx();
+let candy = new Candy();
+let candytitle2 = new Textbx();
+let candy2 = new Candy();
+let candytitle3 = new Textbx();
+let candy3 = new Candy();
+
 function render() {
-	let enter = new Textbx();
 	enter.setScale(1, 0.01);
 	enter.fitParent("content");
 
-	let candytitle = new Textbx();
 	candytitle.setScale(0.5, 0.25);
 	candytitle.fitParent("content");
 	candytitle.setBackground("white");
@@ -298,7 +317,6 @@ function render() {
 	candytitle.setText("Chia "+String(so_bi_chia)+" viên kẹo ra làm "+String(so_chia)+" phần bằng nhau");
 	candytitle.draw();
 
-	let candy = new Candy();
 	candy.fitParent("content");
 	candy.setnCandy(so_bi_chia);
 	candy.setScale(0.3);
@@ -308,26 +326,24 @@ function render() {
 	enter.draw();
 
 	if (so_chia == 0) {
-		let candytitle2 = new Textbx();
 		candytitle2.setScale(1, 0.5);
 		candytitle2.fitParent("content");
 		candytitle2.setMargintop(candytitle2.height * 0.13);
 		candytitle2.setScaleText(0.2);
-		candytitle2.setText("Oh, "+String(so_bi_chia)+" không thể chia cho 0");
+		candytitle2.setText("Oh, "+String(so_bi_chia)+" không thể hết cho 0");
 		candytitle2.draw();
 		return;
 	}
 
 	thuong = Math.trunc(so_bi_chia/so_chia);
 
-	let candytitle2 = new Textbx();
 	candytitle2.setScale(0.2, 0.3);
 	candytitle2.fitParent("content");
+	candytitle2.setMargintop(candytitle2.height * 0.13);
 	candytitle2.setScaleText(0.4);
 	candytitle2.setText("Ở mỗi phần có "+String(thuong)+" viên kẹo");
 	candytitle2.draw();
 
-	let candy2 = new Candy();
 	candy2.fitParent("content");
 	candy2.setScale(0.2);
 	candy2.setnCandy(thuong);
@@ -344,13 +360,12 @@ function render() {
 
 	enter.draw();
 
-	let candytitle3 = new Textbx();
 	candytitle3.setScale(0.2, 0.3);
 	candytitle3.fitParent("content");
 	candytitle3.setScaleText(0.4);
 	candytitle3.setText("Và còn dư "+String(so_bi_chia % so_chia)+" viên kẹo");
 	candytitle3.draw();
-	let candy3 = new Candy();
+
 	candy3.fitParent("content");
 	candy3.setScale(0.2);
 	candy3.setnCandy(so_bi_chia % so_chia);

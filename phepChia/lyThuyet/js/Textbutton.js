@@ -42,13 +42,16 @@ class Textbt extends Elem
 			canvas.class('textbutton');
          if (id != null)
             canvas.id(id);
+			s.noLoop();
          canvas.mouseOver(function () {
             background = "black";
             textColor = "white";
+				s.redraw();
          });
          canvas.mouseOut(function () {
             background = realbackground;
             textColor = "black";
+				s.redraw();
          });
 		}
 		s.draw = function () {

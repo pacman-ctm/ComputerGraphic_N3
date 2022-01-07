@@ -33,25 +33,33 @@ class Candy extends Elem
 		s.setup = function () {
 			canvas = s.createCanvas(width, height);
 			s.colorMode(s.HSB, 180, 100, 100);
-			s.frameRate(5);
+			// s.frameRate(5);
 			s.noStroke();
+			s.noLoop();
 			canvas.class('candy');
 			canvas.mouseClicked (function () {
 				if (boxed) {
 					boxed = false;
 					s.clear();
+					s.redraw();
 				}
 				else {
 					boxed = true;
 					s.background(background);
+					s.redraw();
 				}
 			});
 			canvas.mouseOver(function () {
-            s.background(background);
+				if (!boxed) {
+					s.background(background);
+					s.redraw();
+				}
          });
          canvas.mouseOut(function () {
-				if (!boxed)
+				if (!boxed) {
             	s.clear();
+					s.redraw();
+				}
          });
 		}
 		s.draw = function () {

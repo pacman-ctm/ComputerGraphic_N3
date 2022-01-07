@@ -58,6 +58,7 @@ class Elem {
 		let height = this.height;
 		s.setup = function () {
 			let canvas = s.createCanvas(width, height);
+			s.noLoop();
 		}
 		s.draw = function () {
 			s.background('red');

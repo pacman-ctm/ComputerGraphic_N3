@@ -56,6 +56,7 @@ class Textbx extends Elem
 			canvas.class('textbutton');
          if (id != null)
             canvas.id(id);
+			s.noLoop();
 		}
 		s.draw = function () {
          if (background != -1)
