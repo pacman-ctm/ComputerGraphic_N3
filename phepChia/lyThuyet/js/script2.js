@@ -318,6 +318,8 @@ function render() {
 		return;
 	}
 
+	thuong = Math.trunc(so_bi_chia/so_chia);
+
 	let candytitle2 = new Textbx();
 	candytitle2.setScale(0.2, 0.3);
 	candytitle2.fitParent("content");
@@ -325,7 +327,6 @@ function render() {
 	candytitle2.setText("Ở mỗi phần có "+String(thuong)+" viên kẹo");
 	candytitle2.draw();
 
-	thuong = Math.trunc(so_bi_chia/so_chia);
 	let candy2 = new Candy();
 	candy2.fitParent("content");
 	candy2.setScale(0.2);
