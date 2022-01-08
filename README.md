@@ -2,14 +2,19 @@
 
 Đây là bài tập lớn cuối kỳ của nhóm 3 môn Đồ hoạ máy tính INT3401 1 (Học kỳ 1 năm học 2021-2022) tại trường Đại học Công nghệ - Đại học Quốc gia Hà Nội.
 
-### Đề bài: Tạo một ứng dụng đồ hoạ học toán cho học sinh tiểu học (cụ thể ở đây nhóm đảm nhận phần Phép chia và Tính tuổi)
+## Đề bài: Tạo một ứng dụng đồ hoạ học toán cho học sinh tiểu học (cụ thể ở đây nhóm đảm nhận phần Phép chia và Tính tuổi)
 
-### Hướng dẫn sử dụng:
-- Clone repository về.
-- Mở file [ComputerGraphic_N3.exe](https://github.com/pacman-ctm/ComputerGraphic_N3/blob/master/ComputerGraphic_N3.exe) 
-- Mỗi chương sẽ có phần Lý thuyết (dùng để minh hoạ bài toán) và Thực hành (gồm các quiz để tự luyện).
+## Hướng dẫn sử dụng:
+- Chọn ô `code` (màu xanh lá cây, chọn `Download Zip`) ![download](./screenshot/download.PNG)
+- Giải nén tệp tin tải về
+- Mở file `ComputerGraphic_N3.exe`, ứng dụng sẽ tự động mở trên trình duyệt web mặc định (ví dụ: Google chrome, Cốc Cốc, Internet Explorer) của người dùng
+- Trong trường hợp không có hoặc không mở được file `ComputerGraphic_N3.exe`, chuột phải vào file `index`, chọn `Properties` ở dòng cuối cùng ![openProperties](./screenshot/openProperties.PNG)
+- Sẽ hiện ra cửa sổ sau ![openIndex](./screenshot/openIndex.PNG)
+- Chọn `change` và sau đó chọn phần mềm trình duyệt web bất kỳ (ví dụ: Google chrome, Cốc Cốc, Internet Explorer) ![choseApp](./screenshot/choseApp.PNG)
+- Sau đó, ta có thể click vào file `index` là có thể mở được ứng dụng trên trình duyệt web
+- Mỗi chương sẽ có phần Lý thuyết (dùng để minh hoạ bài toán) và Thực hành (gồm các quiz để tự luyện)
 
-### Triển khai
+## Triển khai
 
 Nhóm triển khai bài toán dưới dạng một ứng dụng web, với phần đồ hoạ ở phần minh hoạ các Lý thuyết. Trong đó:
  + Sử dụng **Processing cho JavaScript** [**(p5.js)**](https://p5js.org) để mô phỏng phép chia đồng thời sử dụng HTML, CSS để tạo bố cục cho trang web. Các tính năng chính gồm:
