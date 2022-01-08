@@ -5,12 +5,12 @@
 ## Đề bài: Tạo một ứng dụng đồ hoạ học toán cho học sinh tiểu học (cụ thể ở đây nhóm đảm nhận phần Phép chia và Tính tuổi)
 
 ## Hướng dẫn sử dụng:
-- Chọn ô `code` (màu xanh lá cây, chọn `Download Zip`) ![download](./screenshot/download.PNG)
+- Chọn ô `code` (màu xanh lá cây, chọn `Download Zip`) ![download](./screenshot/download.png)
 - Giải nén tệp tin tải về
 - Mở file `ComputerGraphic_N3.exe`, ứng dụng sẽ tự động mở trên trình duyệt web mặc định (ví dụ: Google chrome, Cốc Cốc, Internet Explorer) của người dùng
-- Trong trường hợp không có hoặc không mở được file `ComputerGraphic_N3.exe`, chuột phải vào file `index`, chọn `Properties` ở dòng cuối cùng ![openProperties](./screenshot/openProperties.PNG)
-- Sẽ hiện ra cửa sổ sau ![openIndex](./screenshot/openIndex.PNG)
-- Chọn `change` và sau đó chọn phần mềm trình duyệt web bất kỳ (ví dụ: Google chrome, Cốc Cốc, Internet Explorer) ![choseApp](./screenshot/choseApp.PNG)
+- Trong trường hợp không có hoặc không mở được file `ComputerGraphic_N3.exe`, chuột phải vào file `index`, chọn `Properties` ở dòng cuối cùng ![openProperties](./screenshot/openProperties.png)
+- Sẽ hiện ra cửa sổ sau ![openIndex](./screenshot/openIndex.png)
+- Chọn `change` và sau đó chọn phần mềm trình duyệt web bất kỳ (ví dụ: Google chrome, Cốc Cốc, Internet Explorer)![choseApp](./screenshot/choseApp.png)
 - Sau đó, ta có thể click vào file `index` là có thể mở được ứng dụng trên trình duyệt web
 - Mỗi chương sẽ có phần Lý thuyết (dùng để minh hoạ bài toán) và Thực hành (gồm các quiz để tự luyện)
 
